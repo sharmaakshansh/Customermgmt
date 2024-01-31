@@ -15,6 +15,9 @@ Body --> raw --> JSON
 }
 
 
+
+
+
 2.) Login and get Jwt Token
 
 POST  ||  http://localhost:8081/auth/login
@@ -37,7 +40,9 @@ Expected O/P   :
 
 
 
-PostMan Commands After authorization/ accessing token
+#PostMan_Commands_After_authorization/accessing_token
+
+
 
 1.)  // To create a customer
 
@@ -62,6 +67,8 @@ NOTE:- firstName and email cannot remain empty there is validation control over 
 
 
 
+
+
 2.) // To get customers
 
 
@@ -69,6 +76,8 @@ NOTE:- firstName and email cannot remain empty there is validation control over 
 GET  || http://localhost:8081/api/customers?pageNumber=1&pageSize=10&sortBy=id&sortDir=asc
 
 Note:- pageNumber starts from 0.By this command pageNumber 1 will be displayed which has 10 elements and are sorted by id in ascending order.
+
+
 
 
 3.) // To get customer by id 
@@ -81,8 +90,9 @@ Example :-  http://localhost:8081/api/customers/7
 
 
 
-4.) // Search By firstName
 
+
+4.) // Search By firstName
 
 
 GET     || http://localhost:8080/api/customers/searchByfirstname/{keyword}
@@ -91,13 +101,16 @@ example :- http://localhost:8080/api/customers/searchByfirstname/Ashu
 
 
 
-5.) // Search By Phone
 
+
+5.) // Search By Phone
 
 
 GET     || http://localhost:8080/api/customers/searchByPhone/{keyword}
 
 example :- http://localhost:8080/api/customers/searchByPhone/99393939
+
+
 
 
 
@@ -110,6 +123,7 @@ Example :- http://localhost:8081/api/customers/searchByEmail/william.wilson@exam
 
 
 
+
 7.) // Search by city
 
 GET    ||  http://localhost:8080/api/customers/searchByCity/{keyword}
@@ -118,11 +132,14 @@ Example :- http://localhost:8081/api/customers/searchByCity/Hollywood
 
 
 
+
 8.) // Update a customer with id 
 
 PUT   || http://localhost:8081/api/customers/id
 
 Example :- http://localhost:8081/api/customers/{8} 
+
+
 
 
 

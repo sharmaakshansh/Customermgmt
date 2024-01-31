@@ -20,6 +20,9 @@ PostMan command for Authorization
 
 
 
+![RegisterAdmin](https://github.com/sharmaakshansh/Customermgmt/assets/121374240/093a5b83-17a8-402e-abb8-6e9858693a96)
+
+
 
 
 2.) Login and get Jwt Token

@@ -8,7 +8,7 @@ PostMan command for Authorization
 
 
 
-POST || http://localhost:8081/auth/create
+       POST || http://localhost:8081/auth/create
 
        Body --> raw --> JSON
 
@@ -27,21 +27,21 @@ POST || http://localhost:8081/auth/create
 
 
 
-POST  ||  http://localhost:8081/auth/login
-Body  --> raw --> JSON
+         POST  ||  http://localhost:8081/auth/login
+         Body  --> raw --> JSON
 
-{
- "loginId": "test@sunbasedata.com",
-  "password": "Test@123"
-}
+            {
+             "loginId": "test@sunbasedata.com",
+              "password": "Test@123"
+                }
 
-Expected (format)O/P (x.y.z)  :
-                 {
-    "jwtToken": "eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJ0ZXN0QHN1bmJhc2VkYXRhLmNvbSIsImlhdCI6MTcwNjY4NjU
-                 5MSwiZXhwIjoxNzA2NzA0NTkxfQ.eYlMWsiW7ZS5Kx00rYaGMPDVCGp5dmEgKbS7t2I
-                 dDyc29YHGtq_JWyAw7sPVuGL6pIzJc6Y4ZnBC6wJBZ72LuQ",
-    "username": "test@sunbasedata.com"
-}
+            Expected (format)O/P (x.y.z)  :
+                           {
+                               "jwtToken": "eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJ0ZXN0QHN1bmJhc2VkYXRhLmNvbSIsImlhdCI6MTcwNjY4NjU
+                                            5MSwiZXhwIjoxNzA2NzA0NTkxfQ.eYlMWsiW7ZS5Kx00rYaGMPDVCGp5dmEgKbS7t2I
+                                            dDyc29YHGtq_JWyAw7sPVuGL6pIzJc6Y4ZnBC6wJBZ72LuQ",
+                               "username": "test@sunbasedata.com"
+                           }
 
 
 
@@ -60,24 +60,24 @@ Expected (format)O/P (x.y.z)  :
 
 
 
-POST   ||  http://localhost:8081/api/customers
+            POST   ||  http://localhost:8081/api/customers
 
-Body --> raw --> JSON
+          Body --> raw --> JSON
 
-{
-"firstName": "John",
-"lastName": "Doe",
-"street": "Elvnu Street",
-"address": "H no 2 ",
-"city": "Delhi",
-"state": "Delhi",
-"email": "sam@gmail.com",
-"phone": "12345678"
-}
+            { 
+                  "firstName": "John", 
+                  "lastName": "Doe",
+                  "street": "Elvnu Street",
+                  "address": "H no 2 ",
+                  "city": "Delhi",
+                   "state": "Delhi",
+                  "email": "sam@gmail.com",
+                  "phone": "12345678"
+               }
 
 
-NOTE:- firstName and email cannot remain empty there is validation control over there .
-So make sure while creating customer right variables are used for passing value.
+               NOTE:- firstName and email cannot remain empty there is validation control over there .
+                       So make sure while creating customer right variables are used for passing value.
 
 
 
@@ -93,9 +93,9 @@ So make sure while creating customer right variables are used for passing value.
 
 
 
-GET  || http://localhost:8081/api/customers?pageNumber=1&pageSize=10&sortBy=id&sortDir=asc
+                                   GET  || http://localhost:8081/api/customers?pageNumber=1&pageSize=10&sortBy=id&sortDir=asc
 
-Note:- pageNumber starts from 0.By this command pageNumber 1 will be displayed which has 10 elements and are sorted by id in ascending order.
+       Note:- pageNumber starts from 0.By this command pageNumber 1 will be displayed which has 10 elements and are sorted by id in ascending order.
 
 
 
@@ -112,9 +112,9 @@ Note:- pageNumber starts from 0.By this command pageNumber 1 will be displayed w
 
 
 
-GET  ||     http://localhost:8080/api/customers/{id}
+                   GET  ||     http://localhost:8080/api/customers/{id}
 
-Example :-  http://localhost:8081/api/customers/7
+                   Example :-  http://localhost:8081/api/customers/7
 
 
 
@@ -132,11 +132,9 @@ Example :-  http://localhost:8081/api/customers/7
 
 
 
-GET     || http://localhost:8080/api/customers/searchByfirstname/{keyword}
+                            GET     || http://localhost:8080/api/customers/searchByfirstname/{keyword}
 
-example :- http://localhost:8080/api/customers/searchByfirstname/Ashu
-
-
+                             example :- http://localhost:8080/api/customers/searchByfirstname/Ashu
 
 
 
@@ -149,9 +147,9 @@ example :- http://localhost:8080/api/customers/searchByfirstname/Ashu
 
 
 
-GET     || http://localhost:8080/api/customers/searchByPhone/{keyword}
+                       GET     || http://localhost:8080/api/customers/searchByPhone/{keyword}
 
-example :- http://localhost:8080/api/customers/searchByPhone/99393939
+                       example :- http://localhost:8080/api/customers/searchByPhone/99393939
 
 
 
@@ -160,9 +158,9 @@ example :- http://localhost:8080/api/customers/searchByPhone/99393939
 6.) // Search By Email
 
 
-GET     || http://localhost:8080/api/customers/searchByEmail/{keyword}
+                               GET     || http://localhost:8080/api/customers/searchByEmail/{keyword}
 
-Example :- http://localhost:8081/api/customers/searchByEmail/william.wilson@example.com
+                         Example :- http://localhost:8081/api/customers/searchByEmail/william.wilson@example.com
 
 
 
@@ -177,9 +175,9 @@ Example :- http://localhost:8081/api/customers/searchByEmail/william.wilson@exam
 
 
 
-GET    ||  http://localhost:8080/api/customers/searchByCity/{keyword}
+                            GET    ||  http://localhost:8080/api/customers/searchByCity/{keyword}
 
-Example :- http://localhost:8081/api/customers/searchByCity/Hollywood
+                            Example :- http://localhost:8081/api/customers/searchByCity/Hollywood
 
 
 
@@ -194,9 +192,9 @@ Example :- http://localhost:8081/api/customers/searchByCity/Hollywood
 
 
 
-PUT   || http://localhost:8081/api/customers/id
+                        PUT   || http://localhost:8081/api/customers/id
 
-Example :- http://localhost:8081/api/customers/{8} 
+                        Example :- http://localhost:8081/api/customers/{8} 
 
 
 
@@ -209,9 +207,9 @@ Example :- http://localhost:8081/api/customers/{8}
 
 
 
-Delete  ||  http://localhost:8081/api/customers/{id}
+                  Delete  ||  http://localhost:8081/api/customers/{id}
 
-Example :-  http://localhost:8081/api/customers/9
+                  Example :-  http://localhost:8081/api/customers/9
 
 
 

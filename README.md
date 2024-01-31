@@ -92,6 +92,13 @@ h.) security--> it consist of 3 classes  JwtAuthenticationEntrypoint,JwtAuthenti
 i.) securityconfig --->  it consist of a class SecurityConfig , here all the configurations were set for example all the requests were permitted without authentication which starts with ("/auth/**") 
               
 
+j.) In application.properties all the configuration were set up.
+
+
+k.) in pom.xml all the dependencies were set up.
+
+
+
 # PostMan command for Authorization
  
 1.) Create a admin with designation

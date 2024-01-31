@@ -12,7 +12,9 @@ There are layers of packages
  
  
  
-a.) There are 8 packages in src/main/java
+All these  packages in 
+
+a.)src/main/java
 
 
 

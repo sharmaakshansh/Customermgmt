@@ -1,12 +1,17 @@
 # Customermgmt
 
 
-#Expalination about code
+# Expalination about code
 
 
 
- I have sused springboot to build these APIs 
- There are layers of packages 
+I have used springboot to build these APIs 
+
+
+There are layers of packages 
+ 
+ 
+ 
 a.) There are 8 packages in src/main/java
 
 

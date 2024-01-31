@@ -28,10 +28,20 @@ c.)cstmrcontroller---> consist two controller classes
                       create/register admin , and these admins can access jwt token
                   2--> CstmrController : it has api end points for customer to perform these 
                         operations.
-                                Create a customer
+                              
+                              
+                              - Create a customer
+                              
+                              
                               - Update a customer
+                              
+                              
                               - Get a list of customer (API with pagination sorting and searching )
+                              
+                              
                               - Get a single customer based on ID
+                              
+                              
                               - Delete a customer
 
 

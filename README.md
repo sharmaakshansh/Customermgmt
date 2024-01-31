@@ -1,7 +1,7 @@
 # Customermgmt
 
 
-# Expalination about code
+# Expalination about code (scroll down to see postman o/p)
 
 
 
@@ -92,7 +92,7 @@ h.) security--> it consist of 3 classes  JwtAuthenticationEntrypoint,JwtAuthenti
 i.) securityconfig --->  it consist of a class SecurityConfig , here all the configurations were set for example all the requests were permitted without authentication which starts with ("/auth/**") 
               
 
-PostMan command for Authorization
+# PostMan command for Authorization
  
 1.) Create a admin with designation
 
@@ -144,7 +144,7 @@ PostMan command for Authorization
 
 
 
-#No access without_authorization/accessing_token
+# No access without_authorization/accessing_token
 
 
 
@@ -155,7 +155,7 @@ PostMan command for Authorization
 ![using jwt bearer(2)](https://github.com/sharmaakshansh/Customermgmt/assets/121374240/c7962e39-9deb-4c2a-b195-6a3b3df8883e)
 
  
-#PostMan commands after accessing jwt token
+# PostMan commands after accessing jwt token
  
  1.)  // To create a customer
 

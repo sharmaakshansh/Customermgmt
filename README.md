@@ -52,7 +52,7 @@ PostMan command for Authorization
 
 
 
-#PostMan_Commands_After_authorization/accessing_token
+#No access without_authorization/accessing_token
 
 
 
@@ -63,6 +63,7 @@ PostMan command for Authorization
 ![using jwt bearer(2)](https://github.com/sharmaakshansh/Customermgmt/assets/121374240/c7962e39-9deb-4c2a-b195-6a3b3df8883e)
 
  
+#PostMan commands after accessing jwt token
  
  1.)  // To create a customer
 

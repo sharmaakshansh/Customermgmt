@@ -24,23 +24,23 @@ b.)customerassesment consist main class --> from here application is started/run
 
 
 c.)cstmrcontroller---> consist two controller classes 
+                  
+                  
                   1--> AuthController: responsible for accessing APIs which is used to 
                       create/register admin , and these admins can access jwt token
+                  
+                  
                   2--> CstmrController : it has api end points for customer to perform these 
                         operations.
                               
                               
                               - Create a customer
                               
-                              
                               - Update a customer
-                              
                               
                               - Get a list of customer (API with pagination sorting and searching )
                               
-                              
                               - Get a single customer based on ID
-                              
                               
                               - Delete a customer
 
@@ -48,8 +48,14 @@ c.)cstmrcontroller---> consist two controller classes
 
 
 d.)cstmrentities---> consist 3 classes, 2 are Entity class one is jwtResponse
+                   
+                   
                    1--> Admins: Through these admin object were created in db
+                   
+                   
                    2--> Customer: Through these customer object is created
+                   
+                   
                    3--> JwtResponse: Through these response is sent to the client when Admin(object of Admins) try to access the auth/login api from AuthController.
 
 
@@ -61,8 +67,12 @@ e.)cstmrdao---->  these pkg contain two interfaces CstmrDao and AdminsDao and bo
 
 
 f.)cstmrpayload---> it contains two classes CustomerDto and CustomerResponse
+              
+              
               1-->CustomerDto as we do not want direct interacction of Customer entity (as it is making changes in db) so we creaate this this & 
                      Modelmapper is used to convert data from customer to customerdto or vice versa.
+              
+              
               2--->CustomerResponse: As we are doing pagination as well so it consist of fields which are returned when Customer is returned alonng with its fields such as page no. islastpage total elements etc.
 
 
